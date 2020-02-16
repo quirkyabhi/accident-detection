@@ -1,4 +1,7 @@
 # Accident-Detection
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![HitCount](http://hits.dwyl.com/manojpawarsj12/accident-detection.svg)](http://hits.dwyl.com/manojpawarsj12/accident-detection)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
 ![alt text](https://raw.githubusercontent.com/manojpawarsj12/accident-detection/master/htdocs/1.png)
 # Overview 
