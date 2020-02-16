@@ -1,6 +1,6 @@
 # Accident-Detection
 
-
+![alt text](https://raw.githubusercontent.com/manojpawarsj12/accident-detection/master/htdocs/1.png)
 # Overview 
 Our main goal of this project is to use deep learning and computer vision to detect accidents on dashcam and report it to nearby emergency services with valid accident images.
 
@@ -8,9 +8,9 @@ Our main goal of this project is to use deep learning and computer vision to det
 # Challenges 
 1. Our main challenge was to gather accident images and videos and manually categuorize images into accient and non-accident frames
 
-2. To design a deep convolutional neural networks for this project.
+2. To design a deep convolutional neural networks model for this project.
 
-3. Limmited hardware resorces like GUP's.
+3. Limited hardware resorces like GPU's.
 
 
 # Model Overview
@@ -54,6 +54,16 @@ https://drive.google.com/open?id=1AnJSogx65iyfIG0cSm5D15xfTGJzst8d
 
 5. A proper php-language environment like xampp 
 
+# DEMO
+
+***1.accident***
+
+![alt text](https://raw.githubusercontent.com/manojpawarsj12/accident-detection/master/assets/5.gif)
+
+***2.Non-accident***
+
+![alt text](https://raw.githubusercontent.com/manojpawarsj12/accident-detection/master/assets/6.gif)
+
 
 # Train 
 
@@ -61,6 +71,13 @@ Go to bash/cmd and type
 
 python train.py
 
+# Tensorboard visual 
+**1. Traning set 
+![alt text](https://raw.githubusercontent.com/manojpawarsj12/accident-detection/master/assets/4.png)
+2. Validation set**
+![alt text](https://raw.githubusercontent.com/manojpawarsj12/accident-detection/master/assets/2.png)
+**3.Number of corercts v/s epochs**
+![alt text](https://raw.githubusercontent.com/manojpawarsj12/accident-detection/master/assets/3.png)
 # Test/Accuracy
 
 Go to bash/cmd and type
@@ -73,5 +90,7 @@ python evaluate.py
 
 
 # Result
+
+![alt text](https://raw.githubusercontent.com/manojpawarsj12/accident-detection/master/assets/1.png)
 
 The model reaches a classification accuracy of 86.00% accuracy on a randomly sampled test set, composed of 20% of the total amount of video sequences from our dataset. Will re-train this model when we have a good GPU and somre data .
