@@ -30,29 +30,31 @@ densenet201  :  22.80   : 6.43
 
 densenet161  :  22.35   : 6.20
 
+![alt text](https://raw.githubusercontent.com/manojpawarsj12/accident-detection/master/assets/densenet1.png)
 
 
 # Prerequisite 
 
 Download anaconda from here https://www.anaconda.com/distribution/#download-section
 
-1. Pytorch
+1. Pytorch 
 
-conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+> conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 
-2. OpenCV
 
-conda install -c conda-forge opencv
+2. OpenCV 
+
+> conda install -c conda-forge opencv
 
 3. Dataset of accident/non-accident images 
 
-https://drive.google.com/open?id=1o0D7vnGUZHS72is6n1jV1ge2BDfObzVi
+>  https://drive.google.com/open?id=1o0D7vnGUZHS72is6n1jV1ge2BDfObzVi
 
 4. Pretrained Model binary file
 
-https://drive.google.com/open?id=1AnJSogx65iyfIG0cSm5D15xfTGJzst8d
+>  https://drive.google.com/open?id=1AnJSogx65iyfIG0cSm5D15xfTGJzst8d
 
-5. A proper php-language environment like xampp 
+5.  A proper php-language environment like xampp,remove htdocs folder and replace that with htdocs in this repo 
 
 # DEMO
 
