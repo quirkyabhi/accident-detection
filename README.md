@@ -93,15 +93,15 @@ python train.py
 
 Go to bash/cmd and type
 
-python test.py
+> python test.py
 
 # Test on video
 
-python evaluate.py
+> python evaluate.py
 
 # Test on Webcam
 
-python livewebcam.py
+> python livewebcam.py
 # Result
 
 ![alt text](https://raw.githubusercontent.com/manojpawarsj12/accident-detection/master/assets/1.png)
