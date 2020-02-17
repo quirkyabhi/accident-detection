@@ -57,7 +57,13 @@ Download anaconda from here https://www.anaconda.com/distribution/#download-sect
 
 >  https://drive.google.com/open?id=1AnJSogx65iyfIG0cSm5D15xfTGJzst8d
 
+
 5.  A proper php-language environment like xampp,remove htdocs folder and replace that with htdocs in this repo 
+
+
+6. Clone or Download this repo 
+
+> git clone https://github.com/manojpawarsj12/accident-detection.git
 
 # DEMO
 
