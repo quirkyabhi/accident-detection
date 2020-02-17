@@ -2,7 +2,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![HitCount](http://hits.dwyl.com/manojpawarsj12/accident-detection.svg)](http://hits.dwyl.com/manojpawarsj12/accident-detection)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
-
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8e257c8d07a74dba891cfb03cd18d76f)](https://www.codacy.com/manual/manojpawarsj12/accident-detection?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=manojpawarsj12/accident-detection&amp;utm_campaign=Badge_Grade)
 ![alt text](https://raw.githubusercontent.com/manojpawarsj12/accident-detection/master/htdocs/1.png)
 # Overview 
 Our main goal of this project is to use deep learning and computer vision to detect accidents on dashcam and report it to nearby emergency services with valid accident images.
