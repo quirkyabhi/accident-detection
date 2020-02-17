@@ -1,30 +1,29 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-import torch
-from torchvision import datasets, transforms, models
-import torchvision
-import torch.nn.functional as F
-import cv2
-from torchsummary import summary
-from torch import nn, optim
-from torch.autograd import Variable
-from torch.utils.data.sampler import SubsetRandomSampler
-from torch.utils.data import Dataset, DataLoader
-from PIL import Image
-import torch.optim as optim
-#from logger import Logge
-import torch.utils.data as data_utils
-train_on_gpu = torch.cuda.is_available()
 import webbrowser
+
+import numpy as np
+import torch
+import torch.nn.functional as F
+import torch.optim as optim
+import torch.utils.data as data_utils
+import torchvision
+from PIL import Image, ImageFile
+from torch import nn
+from torch import optim as optim
+from torch.autograd import Variable
+from torch.optim import lr_scheduler
+from torch.utils.data import DataLoader, Dataset
+from torch.utils.data.sampler import SubsetRandomSampler
+from torchvision import datasets, models, transforms
+
+import cv2
+
+train_on_gpu = torch.cuda.is_available()
 if not train_on_gpu:
     print('CUDA is not available.  Training on CPU ...')
     
 else:
     print('CUDA is available!  Training on GPU ...')
-from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
-from torch.optim import lr_scheduler
 #!pip install --upgrade wandb
 
 
@@ -72,7 +71,7 @@ n_classes = 2
 
 
 
-model = models.densenet161(pretrained=True)
+model = models.densenet161()
 
 
 model.classifier = nn.Sequential(nn.Linear(2208, 1000),
@@ -137,7 +136,3 @@ while ret:
    
 vid.release()
 cv2.destroyAllWindows()    
-    
-    
-    
-  

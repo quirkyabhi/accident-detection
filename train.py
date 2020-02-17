@@ -1,26 +1,20 @@
-from torch.optim import lr_scheduler
-from PIL import ImageFile
-import webbrowser
 import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
 import torch
-from torchvision import datasets, transforms, models
-import torchvision
 import torch.nn.functional as F
-import cv2
-# Any results you write to the current directory are saved as output.
-from torchsummary import summary
-from torch import nn, optim
-from torch.autograd import Variable
-from torch.utils.data.sampler import SubsetRandomSampler
-from torch.utils.data import Dataset, DataLoader
-from PIL import Image
-from skimage import io, transform
 import torch.optim as optim
-#from logger import Logge
 import torch.utils.data as data_utils
-from torch.utils.tensorboard import SummaryWriter
+import torchvision
+from PIL import Image, ImageFile
+from torch import nn
+from torch import optim as optim
+from torch.autograd import Variable
+from torch.optim import lr_scheduler
+from torch.utils.data import DataLoader, Dataset
+from torch.utils.data.sampler import SubsetRandomSampler
+from torchvision import datasets, models, transforms
+
+from torchsummary import summary
+
 train_on_gpu = torch.cuda.is_available()
 if not train_on_gpu:
     print('CUDA is not available.  Training on CPU ...')
