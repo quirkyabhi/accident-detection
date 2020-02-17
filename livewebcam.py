@@ -27,29 +27,15 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 #!pip install --upgrade wandb
 
 
-data_dir = 'accidents'
-valid_size = 0.2
 
 
 
-train_transforms = transforms.Compose([transforms.RandomRotation(30),
-                                       transforms.RandomResizedCrop(224),
-                                       transforms.RandomVerticalFlip(),
-                                       transforms.RandomHorizontalFlip(),
-                                       transforms.ToTensor(),
-                                       transforms.Normalize([0.485, 0.456, 0.406],
-                                                            [0.229, 0.224, 0.225])])
+
 test_transforms = transforms.Compose([transforms.Resize(255),
                                     #  transforms.CenterCrop(224),
                                        transforms.ToTensor(),
                                        ])
-valid_transforms = transforms.Compose([transforms.RandomRotation(30),
-                                       transforms.RandomResizedCrop(224),
-                                       transforms.RandomVerticalFlip(),
-                                       transforms.RandomHorizontalFlip(),
-                                       transforms.ToTensor(),
-                                       transforms.Normalize([0.485, 0.456, 0.406],
-                                                            [0.229, 0.224, 0.225])])
+
 
 
 
@@ -59,17 +45,6 @@ valid_transforms = transforms.Compose([transforms.RandomRotation(30),
 
 
 # Pass transforms in here, then run the next cell to see how the transforms look
-train_data = datasets.ImageFolder(data_dir , transform=train_transforms)
-
-print(len(train_data))
-train_data,test_data, valid_data = torch.utils.data.random_split(train_data,[27298,5850,5850])
-trainloader = torch.utils.data.DataLoader(train_data, batch_size=8,num_workers=1,pin_memory=True)
-testloader = torch.utils.data.DataLoader(test_data, batch_size=8,num_workers=1,pin_memory=True)
-validloader = torch.utils.data.DataLoader(valid_data, batch_size=8,num_workers=1,pin_memory=True)
-n_classes = 2
-
-
-
 
 model = models.densenet161()
 
